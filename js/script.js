@@ -5,7 +5,11 @@ function showPlace() {
    			choosenPlace = document.getElementById("place"+i).value;
    		}
    }
-   alert(choosenPlace);
+   
+   document.getElementById("place-name").innerHTML = placeData[choosenPlace-1].name;
+   document.getElementById("description").innerHTML = placeData[choosenPlace-1].description;
+   document.getElementById("map").innerHTML = placeData[choosenPlace-1].map;
+
 }
 
 let placeData = [
